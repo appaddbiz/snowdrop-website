@@ -237,7 +237,7 @@ p {
 
 .hero-h1,
 .display-heading {
-  font-size: clamp(2.4rem, 5.4vw, 4.6rem);
+  font-size: clamp(2.4rem, 3.4vw, 4.6rem);
   line-height: 1.08;
 }
 
@@ -679,7 +679,7 @@ body.menu-open {
   color: var(--color-white);
   font-weight: 500;
   margin-bottom: 22px;
-  max-width: 13ch;
+
   animation: fadeInUp 1s var(--ease) 0.2s both;
 }
 
@@ -3900,7 +3900,6 @@ body.menu-open {
   }
 
   .hero-h1 {
-    max-width: 11ch;
     font-size: clamp(2.5rem, 14vw, 3.35rem);
   }
 
@@ -4136,7 +4135,7 @@ body.menu-open {
 
 .hero--editorial .hero-h1 {
   color: var(--color-dark);
-  max-width: 14.8ch;
+
   margin-bottom: 28px;
   font-size: clamp(3.1rem, 4.55vw, 4.75rem);
   line-height: 1.04;
@@ -4541,7 +4540,6 @@ body.menu-open {
   }
 
   .hero--editorial .hero-h1 {
-    max-width: 9.8ch;
     font-size: clamp(2.45rem, 11.2vw, 3.35rem);
     line-height: 1.03;
   }
@@ -4816,19 +4814,28 @@ body.menu-open {
   text-transform: none;
 }
 
-.section-intro .intro-more {
+.section-intro .intro-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
   margin-top: 20px;
+}
+
+.section-intro .intro-more {
+  margin-top: 0;
   min-height: 42px;
   padding: 12px 20px;
   border-radius: 0;
-  background: #111;
-  color: var(--color-white);
+  background: var(--intro-gold);
+  border-color: var(--intro-gold);
+  color: var(--color-dark);
   font-size: 0.78rem;
 }
 
-.section-intro .intro-more::after {
-  content: "->";
-  margin-left: 10px;
+.section-intro .intro-more:hover {
+  background: var(--color-gold);
+  border-color: var(--color-gold);
+  color: var(--color-dark);
 }
 
 .section-intro .intro-feature-cards {
@@ -6784,10 +6791,10 @@ body.menu-open {
 }
 
 .hero-h1 {
-  max-width: 11.8ch;
+  /* max-width: 11.8ch; */
   margin-bottom: 28px;
   color: #fffdf8;
-  font-size: clamp(4.2rem, 6.4vw, 7.25rem);
+  font-size: clamp(3.2rem, 3.4vw, 3.25rem);
   line-height: 0.95;
   text-shadow: 0 20px 54px rgba(0, 0, 0, 0.34);
 }
@@ -8453,8 +8460,16 @@ h3,
   border: 1px solid rgba(180, 141, 60, 0.18);
   border-radius: 8px;
   background:
-    radial-gradient(circle at 88% 18%, rgba(213, 179, 93, 0.12), transparent 30%),
-    linear-gradient(145deg, rgba(255, 255, 255, 0.98) 0%, rgba(250, 247, 241, 0.88) 100%);
+    radial-gradient(
+      circle at 88% 18%,
+      rgba(213, 179, 93, 0.12),
+      transparent 30%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.98) 0%,
+      rgba(250, 247, 241, 0.88) 100%
+    );
   box-shadow:
     0 30px 90px -66px rgba(32, 32, 30, 0.58),
     inset 0 1px 0 rgba(255, 255, 255, 0.82);
@@ -8476,8 +8491,16 @@ h3,
 .section-intro .intro-feature-cards .stat-item:first-child {
   border-color: rgba(196, 154, 67, 0.5);
   background:
-    radial-gradient(circle at 84% 12%, rgba(213, 179, 93, 0.18), transparent 32%),
-    linear-gradient(145deg, rgba(255, 252, 245, 1) 0%, rgba(248, 243, 234, 0.92) 100%);
+    radial-gradient(
+      circle at 84% 12%,
+      rgba(213, 179, 93, 0.18),
+      transparent 32%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(255, 252, 245, 1) 0%,
+      rgba(248, 243, 234, 0.92) 100%
+    );
 }
 
 .section-intro .intro-feature-cards .stat-item:hover {
@@ -8494,8 +8517,11 @@ h3,
   margin: 0 14px 0 0;
   border-color: rgba(196, 154, 67, 0.32);
   border-radius: 8px;
-  background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(247, 241, 229, 0.84));
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.9),
+    rgba(247, 241, 229, 0.84)
+  );
   color: var(--color-gold-deep);
   box-shadow:
     inset 0 0 0 8px rgba(255, 255, 255, 0.42),

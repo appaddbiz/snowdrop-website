@@ -332,6 +332,32 @@
   }
 
   /* ------------------------------------------------------------------------
+     Homepage project gallery filters
+     ------------------------------------------------------------------------ */
+  var galleryFilterBar = document.querySelector("[data-gallery-filter-bar]");
+  var gallery = document.querySelector("[data-project-gallery]");
+
+  if (galleryFilterBar && gallery) {
+    var galleryFilterBtns = galleryFilterBar.querySelectorAll("[data-gallery-filter]");
+    var homeGalleryItems = gallery.querySelectorAll("[data-gallery-item]");
+
+    galleryFilterBtns.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var filter = btn.getAttribute("data-gallery-filter");
+
+        galleryFilterBtns.forEach(function (button) {
+          button.classList.toggle("is-active", button === btn);
+        });
+
+        homeGalleryItems.forEach(function (item) {
+          var show = filter === "all" || item.getAttribute("data-category") === filter;
+          item.classList.toggle("is-hidden", !show);
+        });
+      });
+    });
+  }
+
+  /* ------------------------------------------------------------------------
      Lightbox (Projects page)
      ------------------------------------------------------------------------ */
   var lightbox = document.querySelector("[data-lightbox]");

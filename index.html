@@ -36,6 +36,64 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+    /* mobile view */
+
+
+    @media (max-width: 767px) {
+      .aboutus-mobile {
+        display: block;
+      }
+
+      .aboutus-desk {
+        display: none;
+      }
+
+      .mobile-btn {
+        text-align: center;
+      }
+
+      .arrow-btns {
+        display: none !important;
+      }
+
+      .title-area {
+        text-align: center;
+      }
+
+      .logo {
+        width: 250px;
+      }
+    }
+
+    /* desktop view */
+    @media (min-width: 767px) {
+      .aboutus-mobile {
+        display: none;
+      }
+
+      .aboutus-desk {
+        display: block;
+      }
+
+      .logo {
+        width: 300px;
+      }
+    }
+
+
+    @media (max-width: 768px) {
+      .desk-banner {
+        display: none;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .mobile-banner {
+        display: none;
+      }
+    }
+  </style>
   </head>
 
   <body class="has-transparent-header has-mobile-cta">
@@ -159,106 +217,35 @@
     </div>
 
     <main id="main">
-      <section class="hero">
-        <div class="hero-media">
+
+      <section class="new-home-hero" aria-label="Snowdrop Interiors homepage">
+        <picture class="new-home-hero-media">
+          <source
+            media="(max-width: 768px)"
+            srcset="images/stock/hero-living-room-premium.webp"
+          />
           <img
             src="images/stock/hero-living-room-premium.webp"
             width="1920"
             height="1280"
-            alt="Premium living room interior designed for a Bangalore home"
+            alt="Snowdrop Interiors premium living room design"
             fetchpriority="high"
+            decoding="async"
           />
-        </div>
-        <div class="container">
-          <div class="hero-content" data-reveal>
-            <span class="hero-eyebrow">Interior Designers in Bangalore</span>
-            <h1 class="hero-h1">Homes designed for the way you live.</h1>
-            <p class="hero-lede">
-              Snowdrop Interiors plans and executes home interiors, modular
-              kitchens, wardrobes and turnkey projects with one accountable
-              Bangalore team.
-            </p>
-            <div class="hero-ctas">
-              <a class="btn btn-light" href="contact.html"
-                >Book a Free Consultation</a
-              >
-              <a class="btn btn-ghost-light" href="projects.html"
-                >View Projects</a
-              >
-            </div>
-            <ul class="hero-trust" aria-label="Snowdrop Interiors highlights">
-              <li>
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                >
-                  <path d="M20 6 9 17l-5-5" /></svg
-                ><span
-                  ><strong>Design + Execution</strong>One team from layout to
-                  handover</span
-                >
-              </li>
-              <li>
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                >
-                  <path d="M3 21h18M5 21V7l8-4 6 3v15M9 21v-8h6v8" /></svg
-                ><span
-                  ><strong>Bangalore Homes</strong>Apartments, villas and custom
-                  spaces</span
-                >
-              </li>
-              <li>
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                >
-                  <path d="M4 7h16M4 12h16M4 17h10" /></svg
-                ><span
-                  ><strong>3D Planning</strong>Clear layouts before
-                  production</span
-                >
-              </li>
-              <li>
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                >
-                  <path
-                    d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7H14a3.5 3.5 0 0 1 0 7H6"
-                  /></svg
-                ><span
-                  ><strong>Practical Budgets</strong>Scope and materials planned
-                  upfront</span
-                >
-              </li>
-            </ul>
-            <a class="hero-call" href="tel:+919180174199">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-              >
-                <path
-                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"
-                />
-              </svg>
-              Call +91 91801 74199
-            </a>
+        </picture>
+        <div class="new-home-hero-shade" aria-hidden="true"></div>
+        <div class="container new-home-hero-content">
+          <h1>Beautifully designed. Thoughtfully yours.</h1>
+          <p>
+            End-to-end home interiors, modular kitchens and turnkey execution
+            planned around your lifestyle.
+          </p>
+          <div class="new-home-hero-actions">
+            <a class="btn btn-primary" href="contact.html">Free Consultation</a>
+            <a class="btn btn-ghost-light" href="projects.html">View Projects</a>
           </div>
         </div>
       </section>
-
       <section class="section section-intro">
         <div class="container">
           <div class="intro-grid">
@@ -661,9 +648,8 @@
             </p>
           </div>
           <div class="packages-grid package-studio-grid">
-            <a
+            <div
               class="package-card package-card--feature"
-              href="2bhk-interiors.html"
               data-reveal
             >
               <div class="package-media">
@@ -679,8 +665,8 @@
                 <span class="package-kicker">Most requested</span>
                 <h3>2 BHK Interiors</h3>
                 <p>
-                  Coordinated full-home interiors across living, dining, kitchen
-                  and bedrooms with practical storage planned before production.
+                  Complete home planning with living, kitchen, bedrooms,
+                  storage and finishes coordinated before site execution.
                 </p>
                 <ul class="package-includes">
                   <li>Living and dining</li>
@@ -688,15 +674,13 @@
                   <li>Two bedrooms</li>
                   <li>3D layout planning</li>
                 </ul>
-                <span class="package-link"
-                  >Explore 2 BHK <span aria-hidden="true">→</span></span
-                >
+                <a class="package-link package-quote-btn" href="contact.html"
+                  >Get A Quote</a>
               </div>
-            </a>
+            </div>
             <div class="packages-side-list">
-              <a
+              <div
                 class="package-card package-card--compact"
-                href="1bhk-interiors.html"
                 data-reveal
                 data-reveal-delay="1"
               >
@@ -712,15 +696,16 @@
                 <div class="package-body">
                   <span class="package-kicker">Compact home</span>
                   <h3>1 BHK Interiors</h3>
-                  <p>Smart layouts for living, kitchen and bedroom storage.</p>
-                  <span class="package-link"
-                    >Explore <span aria-hidden="true">→</span></span
-                  >
+                  <p>
+                    Smart space planning with living, kitchen, bedroom, storage
+                    and finishes coordinated before site execution.
+                  </p>
+                  <a class="package-link package-quote-btn" href="contact.html"
+                    >Get A Quote</a>
                 </div>
-              </a>
-              <a
+              </div>
+              <div
                 class="package-card package-card--compact"
-                href="3bhk-interiors.html"
                 data-reveal
                 data-reveal-delay="2"
               >
@@ -736,15 +721,16 @@
                 <div class="package-body">
                   <span class="package-kicker">Full family home</span>
                   <h3>3 BHK Interiors</h3>
-                  <p>More rooms, wardrobes, finishes and site coordination.</p>
-                  <span class="package-link"
-                    >Explore <span aria-hidden="true">→</span></span
-                  >
+                  <p>
+                    Expanded room planning with living, kitchen, bedrooms,
+                    wardrobes and finishes coordinated before site execution.
+                  </p>
+                  <a class="package-link package-quote-btn" href="contact.html"
+                    >Get A Quote</a>
                 </div>
-              </a>
-              <a
+              </div>
+              <div
                 class="package-card package-card--compact"
-                href="villa-interiors.html"
                 data-reveal
                 data-reveal-delay="3"
               >
@@ -761,14 +747,13 @@
                   <span class="package-kicker">Premium scope</span>
                   <h3>Villa Interiors</h3>
                   <p>
-                    Large-format planning, custom furniture and turnkey
-                    execution.
+                    Large-format planning with living, kitchen, bedrooms,
+                    furniture and finishes coordinated before site execution.
                   </p>
-                  <span class="package-link"
-                    >Explore <span aria-hidden="true">→</span></span
-                  >
+                  <a class="package-link package-quote-btn" href="contact.html"
+                    >Get A Quote</a>
                 </div>
-              </a>
+              </div>
             </div>
           </div>
         </div>
@@ -1208,17 +1193,6 @@
   </div>
 </section> -->
 
-      <!-- <section class="section section--dark final-cta">
-  <div class="container container--narrow">
-    <h2 data-reveal>Let's plan your home interiors.</h2>
-    <p data-reveal data-reveal-delay="1">Tell us about your home, rooms and budget. We will help you plan the right scope and next steps.</p>
-    <div class="final-cta-ctas" data-reveal data-reveal-delay="2">
-      <a href="contact.html" class="btn btn-light">Book a Free Consultation</a>
-      <a href="https://wa.me/919180174199" class="btn btn-ghost-light" target="_blank" rel="noopener">WhatsApp Us</a>
-    </div>
-    <a class="final-cta-call" href="tel:+919180174199">Call: +91 91801 74199</a>
-  </div>
-</section> -->
     </main>
 
     <footer class="site-footer">
@@ -1227,11 +1201,10 @@
           <div class="footer-brand">
             <a href="index.html" class="logo"
               ><img
-                src="images/website-images/Logo-4.png"
+                src="images/website-images/Snow Logo.png"
                 alt="Snowdrop Interiors logo"
-                width="120"
-                height="34"
-                style="height: 50px; width: auto"
+                width="190"
+                height="58"
             /></a>
             <p>
               End-to-end home interior design and execution in Bangalore, from

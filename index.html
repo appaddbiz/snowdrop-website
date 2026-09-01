@@ -37,63 +37,61 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <style>
-    /* mobile view */
+      /* mobile view */
 
+      @media (max-width: 767px) {
+        .aboutus-mobile {
+          display: block;
+        }
 
-    @media (max-width: 767px) {
-      .aboutus-mobile {
-        display: block;
+        .aboutus-desk {
+          display: none;
+        }
+
+        .mobile-btn {
+          text-align: center;
+        }
+
+        .arrow-btns {
+          display: none !important;
+        }
+
+        .title-area {
+          text-align: center;
+        }
+
+        .logo {
+          width: 250px;
+        }
       }
 
-      .aboutus-desk {
-        display: none;
+      /* desktop view */
+      @media (min-width: 767px) {
+        .aboutus-mobile {
+          display: none;
+        }
+
+        .aboutus-desk {
+          display: block;
+        }
+
+        .logo {
+          width: 300px;
+        }
       }
 
-      .mobile-btn {
-        text-align: center;
+      @media (max-width: 768px) {
+        .desk-banner {
+          display: none;
+        }
       }
 
-      .arrow-btns {
-        display: none !important;
+      @media (min-width: 769px) {
+        .mobile-banner {
+          display: none;
+        }
       }
-
-      .title-area {
-        text-align: center;
-      }
-
-      .logo {
-        width: 250px;
-      }
-    }
-
-    /* desktop view */
-    @media (min-width: 767px) {
-      .aboutus-mobile {
-        display: none;
-      }
-
-      .aboutus-desk {
-        display: block;
-      }
-
-      .logo {
-        width: 300px;
-      }
-    }
-
-
-    @media (max-width: 768px) {
-      .desk-banner {
-        display: none;
-      }
-    }
-
-    @media (min-width: 769px) {
-      .mobile-banner {
-        display: none;
-      }
-    }
-  </style>
+    </style>
   </head>
 
   <body class="has-transparent-header has-mobile-cta">
@@ -307,7 +305,6 @@
     </div>
 
     <main id="main">
-
       <section class="new-home-hero" aria-label="Snowdrop Interiors homepage">
         <h1 class="visually-hidden">
           Snowdrop Interiors - Beautifully designed, thoughtfully yours
@@ -624,7 +621,7 @@
             </a>
             <a
               class="service-card service-card--furniture"
-              href="services.html"
+              href="custom-furniture.html"
               data-reveal
               data-reveal-delay="1"
             >
@@ -752,10 +749,7 @@
             </p>
           </div>
           <div class="packages-grid package-studio-grid">
-            <div
-              class="package-card package-card--feature"
-              data-reveal
-            >
+            <div class="package-card package-card--feature" data-reveal>
               <div class="package-media">
                 <img
                   src="images/stock/living-loft-open-plan.webp"
@@ -769,8 +763,8 @@
                 <span class="package-kicker">Most requested</span>
                 <h3>2 BHK Interiors</h3>
                 <p>
-                  Complete home planning with living, kitchen, bedrooms,
-                  storage and finishes coordinated before site execution.
+                  Complete home planning with living, kitchen, bedrooms, storage
+                  and finishes coordinated before site execution.
                 </p>
                 <ul class="package-includes">
                   <li>Living and dining</li>
@@ -779,7 +773,8 @@
                   <li>3D layout planning</li>
                 </ul>
                 <a class="package-link package-quote-btn" href="contact.html"
-                  >Get A Quote</a>
+                  >Get A Quote</a
+                >
               </div>
             </div>
             <div class="packages-side-list">
@@ -805,7 +800,8 @@
                     and finishes coordinated before site execution.
                   </p>
                   <a class="package-link package-quote-btn" href="contact.html"
-                    >Get A Quote</a>
+                    >Get A Quote</a
+                  >
                 </div>
               </div>
               <div
@@ -830,7 +826,8 @@
                     wardrobes and finishes coordinated before site execution.
                   </p>
                   <a class="package-link package-quote-btn" href="contact.html"
-                    >Get A Quote</a>
+                    >Get A Quote</a
+                  >
                 </div>
               </div>
               <div
@@ -855,7 +852,8 @@
                     furniture and finishes coordinated before site execution.
                   </p>
                   <a class="package-link package-quote-btn" href="contact.html"
-                    >Get A Quote</a>
+                    >Get A Quote</a
+                  >
                 </div>
               </div>
             </div>
@@ -1119,14 +1117,21 @@
             <div class="portfolio-intro">
               <p>
                 We craft interiors that reflect personality, enhance comfort,
-                and elevate everyday living. Hereâ€™s a glimpse of some of our
+                and elevate everyday living. Here's a glimpse of some of our
                 favorite spaces brought to life.
               </p>
 
               <a href="#" class="portfolio-btn">
                 VIEW ALL PROJECTS
                 <span aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
                     <path d="M5 12h14" />
                     <path d="m13 6 6 6-6 6" />
                   </svg>
@@ -1150,7 +1155,14 @@
 
               <div class="project-info">
                 <div class="project-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
                     <path d="M3 11.5 12 4l9 7.5" />
                     <path d="M5.5 10.5V20h13v-9.5" />
                     <path d="M9 20v-5.5h6V20" />
@@ -1178,9 +1190,18 @@
 
               <div class="project-info">
                 <div class="project-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
                     <path d="M4 12.5h16" />
-                    <path d="M6 12.5V8.8A2.8 2.8 0 0 1 8.8 6h6.4A2.8 2.8 0 0 1 18 8.8v3.7" />
+                    <path
+                      d="M6 12.5V8.8A2.8 2.8 0 0 1 8.8 6h6.4A2.8 2.8 0 0 1 18 8.8v3.7"
+                    />
                     <path d="M5 12.5V19" />
                     <path d="M19 12.5V19" />
                     <path d="M8 10h3" />
@@ -1209,7 +1230,14 @@
 
               <div class="project-info">
                 <div class="project-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
                     <path d="M4.5 4.5h15v15h-15z" />
                     <path d="M4.5 9.5h15" />
                     <path d="M9.5 4.5v15" />
@@ -1238,7 +1266,14 @@
 
               <div class="project-info">
                 <div class="project-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
                     <path d="M4 10h16" />
                     <path d="M5.5 10v9" />
                     <path d="M18.5 10v9" />
@@ -1268,9 +1303,18 @@
 
               <div class="project-info">
                 <div class="project-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
                     <path d="M4 7h16v11H4z" />
-                    <path d="M9 7V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V7" />
+                    <path
+                      d="M9 7V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V7"
+                    />
                     <path d="M4 12h16" />
                     <path d="M11 12h2" />
                   </svg>
@@ -1338,7 +1382,6 @@
     </div>
   </div>
 </section> -->
-
     </main>
 
     <footer class="site-footer">
@@ -1504,4 +1547,3 @@
     <script src="js/script.js" defer></script>
   </body>
 </html>
-

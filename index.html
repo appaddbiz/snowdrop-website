@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en-IN">
   <head>
     <meta charset="UTF-8" />
@@ -206,7 +206,16 @@
           <ul>
             <li><a href="index.html" aria-current="page">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
+            <li class="nav-dropdown">
+              <a href="services.html" class="nav-dropdown-toggle">Services</a>
+              <div class="nav-dropdown-menu" aria-label="Services submenu">
+                <a href="1bhk-interiors.html">1BHK</a>
+                <a href="2bhk-interiors.html">2BHK</a>
+                <a href="3bhk-interiors.html">3BHK</a>
+                <a href="villa-interiors.html">Villas</a>
+                <a href="custom-furniture.html">Custom Interiors</a>
+              </div>
+            </li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="packages.html">Packages</a></li>
             <li><a href="process.html">Process</a></li>
@@ -290,7 +299,21 @@
       <nav class="mobile-nav" aria-label="Mobile Primary">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="services.html">Services</a>
+        <div class="mobile-nav-group">
+          <button class="mobile-nav-toggle" type="button" aria-expanded="false">
+            Services
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </button>
+          <div class="mobile-subnav">
+            <a href="1bhk-interiors.html">1BHK</a>
+            <a href="2bhk-interiors.html">2BHK</a>
+            <a href="3bhk-interiors.html">3BHK</a>
+            <a href="villa-interiors.html">Villas</a>
+            <a href="custom-furniture.html">Custom Interiors</a>
+          </div>
+        </div>
         <a href="projects.html">Projects</a>
         <a href="packages.html">Packages</a>
         <a href="process.html">Process</a>
@@ -379,11 +402,16 @@
                 keeps design, production and installation connected through one
                 Bangalore team.
               </p>
-              <div class="intro-metrics">
+              <p class="section-sub">
+                Every detail is reviewed for proportion, storage, lighting and
+                long-term usability, so the finished home feels refined without
+                losing everyday comfort.
+              </p>
+              <!-- <div class="intro-metrics">
                 <span><strong>100+</strong> Projects</span>
                 <span><strong>95+</strong> Clients</span>
                 <span><strong>98%</strong> Satisfaction</span>
-              </div>
+              </div> -->
               <div class="intro-actions">
                 <a class="btn btn-primary intro-more" href="about.html"
                   >Discover More</a
@@ -1109,9 +1137,9 @@
                 <span></span>
               </div>
 
-              <h2>Our Work</h2>
+              <h2>Spaces That Make a Statement</h2>
 
-              <div class="portfolio-script">Spaces, reimagined</div>
+              <div class="portfolio-script">Designed to be noticed</div>
             </div>
 
             <div class="portfolio-intro">
@@ -1440,7 +1468,7 @@
             <h5>Quick Links</h5>
             <ul>
               <li><a href="about.html">About</a></li>
-              <li><a href="services.html">Services</a></li>
+                <li><a href="services.html">Services</a></li>
               <li><a href="projects.html">Projects</a></li>
               <li><a href="packages.html">Packages</a></li>
               <li><a href="process.html">Process</a></li>
@@ -1450,15 +1478,11 @@
           <div class="footer-col">
             <h5>Services</h5>
             <ul>
-              <li><a href="1bhk-interiors.html">1 BHK Interiors</a></li>
-              <li><a href="2bhk-interiors.html">2 BHK Interiors</a></li>
-              <li><a href="3bhk-interiors.html">3 BHK Interiors</a></li>
-              <li><a href="villa-interiors.html">Villa Interiors</a></li>
-              <li><a href="modular-kitchen.html">Modular Kitchens</a></li>
-              <li><a href="wardrobes.html">Wardrobes</a></li>
-              <li>
-                <a href="turnkey-interior-design.html">Turnkey Interiors</a>
-              </li>
+              <li><a href="1bhk-interiors.html">1BHK</a></li>
+              <li><a href="2bhk-interiors.html">2BHK</a></li>
+              <li><a href="3bhk-interiors.html">3BHK</a></li>
+              <li><a href="villa-interiors.html">Villas</a></li>
+              <li><a href="custom-furniture.html">Custom Interiors</a></li>
             </ul>
           </div>
           <div class="footer-col">

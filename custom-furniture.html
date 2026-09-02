@@ -43,7 +43,7 @@
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="has-transparent-header has-mobile-cta">
+  <body class="custom-interiors-page has-transparent-header has-mobile-cta">
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header" id="siteHeader">
       <div class="header-contact-strip" aria-label="Contact information">
@@ -75,7 +75,16 @@
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
+            <li class="nav-dropdown">
+              <a href="services.html" class="nav-dropdown-toggle">Services</a>
+              <div class="nav-dropdown-menu" aria-label="Services submenu">
+                <a href="1bhk-interiors.html">1BHK</a>
+                <a href="2bhk-interiors.html">2BHK</a>
+                <a href="3bhk-interiors.html">3BHK</a>
+                <a href="villa-interiors.html">Villas</a>
+                <a href="custom-furniture.html">Custom Interiors</a>
+              </div>
+            </li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="packages.html">Packages</a></li>
             <li><a href="process.html">Process</a></li>
@@ -129,8 +138,22 @@
         </button>
       </div>
       <nav class="mobile-nav" aria-label="Mobile Primary">
-        <a href="index.html">Home</a><a href="about.html">About</a
-        ><a href="services.html">Services</a><a href="projects.html">Projects</a
+        <a href="index.html">Home</a><a href="about.html">About</a>
+        <div class="mobile-nav-group">
+          <button class="mobile-nav-toggle" type="button" aria-expanded="false">
+            Services
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </button>
+          <div class="mobile-subnav">
+            <a href="1bhk-interiors.html">1BHK</a>
+            <a href="2bhk-interiors.html">2BHK</a>
+            <a href="3bhk-interiors.html">3BHK</a>
+            <a href="villa-interiors.html">Villas</a>
+            <a href="custom-furniture.html">Custom Interiors</a>
+          </div>
+        </div><a href="projects.html">Projects</a
         ><a href="packages.html">Packages</a><a href="process.html">Process</a
         ><a href="contact.html">Contact</a>
       </nav>
@@ -154,7 +177,7 @@
         <div class="container">
           <div class="page-hero-content">
             <div class="breadcrumb">
-              <a href="index.html">Home</a> / <span>Custom Furniture</span>
+              <a href="index.html">Home</a> <span class="breadcrumb-separator">&rsaquo;</span> <span>Custom Furniture</span>
             </div>
             <h1>Custom Furniture in Bangalore</h1>
             <p>
@@ -165,10 +188,10 @@
           </div>
         </div>
       </section>
-      <section class="section">
+      <section class="section custom-intro-section">
         <div class="container">
-          <div class="two-col">
-            <div data-reveal>
+          <div class="two-col custom-intro-grid">
+            <div class="custom-intro-copy" data-reveal>
               <span class="eyebrow">Made for Your Space</span>
               <h2 class="section-heading">A Better Fit Than Off-the-Shelf</h2>
               <div class="content-block" style="margin-top: 24px">
@@ -186,7 +209,7 @@
                 </p>
               </div>
             </div>
-            <div data-reveal data-reveal-delay="1">
+            <div class="custom-create-panel" data-reveal data-reveal-delay="1">
               <span class="eyebrow">What We Create</span>
               <h2 class="section-heading">Furniture for Every Routine</h2>
               <ul class="package-includes" style="margin-top: 24px">
@@ -201,7 +224,7 @@
           </div>
         </div>
       </section>
-      <section class="section section--surface">
+      <section class="section section--surface custom-approach-section">
         <div class="container">
           <div class="section-head section-head--center" data-reveal>
             <span class="eyebrow">Our Approach</span>
@@ -278,7 +301,7 @@
           </div>
         </div>
       </section> -->
-      <section class="section section--surface">
+      <section class="section section--surface custom-related-section">
         <div class="container">
           <div class="section-head section-head--center" data-reveal>
             <span class="eyebrow">Explore Further</span>
@@ -324,7 +347,7 @@
           </div>
         </div>
       </section>
-      <section class="visual-break">
+      <!-- <section class="visual-break">
         <img
           src="images/stock/storage-shelving-wood-cabinet.webp"
           width="1600"
@@ -340,7 +363,7 @@
           </p>
           <a href="contact.html" class="btn btn-light">Start Your Project</a>
         </div>
-      </section>
+      </section> -->
     </main>
     <footer class="site-footer">
       <div class="container">
@@ -368,7 +391,7 @@
             <h5>Quick Links</h5>
             <ul>
               <li><a href="about.html">About</a></li>
-              <li><a href="services.html">Services</a></li>
+                <li><a href="services.html">Services</a></li>
               <li><a href="projects.html">Projects</a></li>
               <li><a href="packages.html">Packages</a></li>
               <li><a href="process.html">Process</a></li>
@@ -378,16 +401,11 @@
           <div class="footer-col">
             <h5>Services</h5>
             <ul>
-              <li><a href="1bhk-interiors.html">1 BHK Interiors</a></li>
-              <li><a href="2bhk-interiors.html">2 BHK Interiors</a></li>
-              <li><a href="3bhk-interiors.html">3 BHK Interiors</a></li>
-              <li><a href="villa-interiors.html">Villa Interiors</a></li>
-              <li><a href="modular-kitchen.html">Modular Kitchens</a></li>
-              <li><a href="wardrobes.html">Wardrobes</a></li>
-              <li><a href="custom-furniture.html">Custom Furniture</a></li>
-              <li>
-                <a href="turnkey-interior-design.html">Turnkey Interiors</a>
-              </li>
+              <li><a href="1bhk-interiors.html">1BHK</a></li>
+              <li><a href="2bhk-interiors.html">2BHK</a></li>
+              <li><a href="3bhk-interiors.html">3BHK</a></li>
+              <li><a href="villa-interiors.html">Villas</a></li>
+              <li><a href="custom-furniture.html">Custom Interiors</a></li>
             </ul>
           </div>
           <div class="footer-col">

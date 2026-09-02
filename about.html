@@ -39,7 +39,7 @@
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="has-transparent-header has-mobile-cta">
+  <body class="about-page has-transparent-header has-mobile-cta">
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header" id="siteHeader">
@@ -147,7 +147,16 @@
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html" aria-current="page">About</a></li>
-            <li><a href="services.html">Services</a></li>
+            <li class="nav-dropdown">
+              <a href="services.html" class="nav-dropdown-toggle">Services</a>
+              <div class="nav-dropdown-menu" aria-label="Services submenu">
+                <a href="1bhk-interiors.html">1BHK</a>
+                <a href="2bhk-interiors.html">2BHK</a>
+                <a href="3bhk-interiors.html">3BHK</a>
+                <a href="villa-interiors.html">Villas</a>
+                <a href="custom-furniture.html">Custom Interiors</a>
+              </div>
+            </li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="packages.html">Packages</a></li>
             <li><a href="process.html">Process</a></li>
@@ -231,7 +240,27 @@
       <nav class="mobile-nav" aria-label="Mobile Primary">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="services.html">Services</a>
+        <div class="mobile-nav-group">
+          <button class="mobile-nav-toggle" type="button" aria-expanded="false">
+            Services
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              aria-hidden="true"
+            >
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </button>
+          <div class="mobile-subnav">
+            <a href="1bhk-interiors.html">1BHK</a>
+            <a href="2bhk-interiors.html">2BHK</a>
+            <a href="3bhk-interiors.html">3BHK</a>
+            <a href="villa-interiors.html">Villas</a>
+            <a href="custom-furniture.html">Custom Interiors</a>
+          </div>
+        </div>
         <a href="projects.html">Projects</a>
         <a href="packages.html">Packages</a>
         <a href="process.html">Process</a>
@@ -259,7 +288,9 @@
         <div class="container">
           <div class="page-hero-content">
             <div class="breadcrumb">
-              <a href="index.html">Home</a> / <span>About</span>
+              <a href="index.html">Home</a>
+              <span class="breadcrumb-separator">&rsaquo;</span>
+              <span>About</span>
             </div>
             <h1>Interior Design, Shaped Around How You Live</h1>
             <p>
@@ -318,7 +349,7 @@
         </div>
       </section>
 
-      <section class="section section--surface" id="project-guides">
+      <section class="section section--surface about-thinking-section" id="project-guides">
         <div class="container">
           <div class="section-head section-head--center" data-reveal>
             <span class="eyebrow">How We Think</span>
@@ -439,7 +470,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section about-location-section">
         <div class="container">
           <div class="two-col">
             <div class="image-frame" data-reveal>
@@ -469,7 +500,7 @@
           </div>
         </div>
       </section>
-      <section class="visual-break">
+      <section class="visual-break about-footer-cta">
         <img
           src="images/stock/living-wood-beam-skylight.webp"
           width="1600"
@@ -485,7 +516,7 @@
             We bring room layouts, storage, material finishes and execution
             together so your home works as a complete space.
           </p>
-          <a href="contact.html" class="btn btn-light">Start Your Project</a>
+          <a href="contact.html" class="btn btn-primary">Start Your Project</a>
         </div>
       </section>
     </main>
@@ -526,15 +557,11 @@
           <div class="footer-col">
             <h5>Services</h5>
             <ul>
-              <li><a href="1bhk-interiors.html">1 BHK Interiors</a></li>
-              <li><a href="2bhk-interiors.html">2 BHK Interiors</a></li>
-              <li><a href="3bhk-interiors.html">3 BHK Interiors</a></li>
-              <li><a href="villa-interiors.html">Villa Interiors</a></li>
-              <li><a href="modular-kitchen.html">Modular Kitchens</a></li>
-              <li><a href="wardrobes.html">Wardrobes</a></li>
-              <li>
-                <a href="turnkey-interior-design.html">Turnkey Interiors</a>
-              </li>
+              <li><a href="1bhk-interiors.html">1BHK</a></li>
+              <li><a href="2bhk-interiors.html">2BHK</a></li>
+              <li><a href="3bhk-interiors.html">3BHK</a></li>
+              <li><a href="villa-interiors.html">Villas</a></li>
+              <li><a href="custom-furniture.html">Custom Interiors</a></li>
             </ul>
           </div>
           <div class="footer-col">
@@ -560,7 +587,7 @@
               <a href="privacy-policy.html">Privacy Policy</a>
               <a href="terms-conditions.html">Terms &amp; Conditions</a>
             </div>
-            <span>Â© 2026 Snowdrop Interiors. All Rights Reserved.</span>
+            <span>© 2026 Snowdrop Interiors. All Rights Reserved.</span>
           </div>
         </div>
       </div>

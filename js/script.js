@@ -57,6 +57,17 @@
       mobileMenuClose.addEventListener("click", closeMenu);
     }
 
+    mobileMenu.querySelectorAll(".mobile-nav-toggle").forEach(function (button) {
+      button.addEventListener("click", function () {
+        var group = button.closest(".mobile-nav-group");
+        var isExpanded = button.getAttribute("aria-expanded") === "true";
+        button.setAttribute("aria-expanded", String(!isExpanded));
+        if (group) {
+          group.classList.toggle("is-open", !isExpanded);
+        }
+      });
+    });
+
     mobileMenu.querySelectorAll("a").forEach(function (link) {
       link.addEventListener("click", closeMenu);
     });
